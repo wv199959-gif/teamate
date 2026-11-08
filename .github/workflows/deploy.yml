@@ -3,10 +3,12 @@ name: Deploy portfolio to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'readme-images/**'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -33,6 +35,28 @@ jobs:
         run: npm ci
       - name: Build website
         run: npm run build
+      - name: Capture each product page for README
+        shell: bash
+        run: |
+          mkdir -p dist/readme-images
+          npm run preview -- --host 127.0.0.1 --port 4173 > /tmp/tea-mate-preview.log 2>&1 &
+          for attempt in {1..30}; do
+            if curl --silent --fail http://127.0.0.1:4173/ >/dev/null; then break; fi
+            sleep 1
+          done
+          for page in plaza detail publish join orders profile org messages review; do
+            google-chrome --headless=new --no-sandbox --disable-gpu --hide-scrollbars \
+              --window-size=1440,1200 --virtual-time-budget=3500 \
+              --screenshot="dist/readme-images/${page}.png" \
+              "http://127.0.0.1:4173/?page=${page}#page-showcase"
+          done
+          test "$(find dist/readme-images -maxdepth 1 -name '*.png' | wc -l)" -eq 9
+      - name: Save screenshots as a separate artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: readme-screenshots
+          path: dist/readme-images/*.png
+          if-no-files-found: error
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -47,4 +71,25 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
+  commit-readme-screenshots:
+    runs-on: ubuntu-latest
+    needs: [build, deploy]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Download README screenshots
+        uses: actions/download-artifact@v4
+        with:
+          name: readme-screenshots
+          path: readme-images
+      - name: Commit README screenshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add readme-images
+          if git diff --cached --quiet; then
+            echo "Screenshots are already up to date."
+          else
+            git commit -m "Add product page screenshots to README"
+            git push
+          fi

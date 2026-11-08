@@ -12,7 +12,43 @@
 
 ## 页面示意
 
-![拼单广场页面原型](public/screens/plaza.svg)
+以下截图分别展示各页面及其对应的产品任务，点击图片可查看大图。
+
+### 01 拼单广场
+
+<img src="readme-images/plaza.png" alt="拼单广场页面截图" width="720" />
+
+### 02 需求详情
+
+<img src="readme-images/detail.png" alt="需求详情页面截图" width="720" />
+
+### 03 发起拼单
+
+<img src="readme-images/publish.png" alt="发起拼单页面截图" width="720" />
+
+### 04 参与拼单
+
+<img src="readme-images/join.png" alt="参与拼单页面截图" width="720" />
+
+### 05 我的拼单
+
+<img src="readme-images/orders.png" alt="我的拼单页面截图" width="720" />
+
+### 06 个人中心
+
+<img src="readme-images/profile.png" alt="个人中心页面截图" width="720" />
+
+### 07 我的组织
+
+<img src="readme-images/org.png" alt="我的组织页面截图" width="720" />
+
+### 08 消息中心
+
+<img src="readme-images/messages.png" alt="消息中心页面截图" width="720" />
+
+### 09 履约评价
+
+<img src="readme-images/review.png" alt="履约评价页面截图" width="720" />
 
 > 本站是产品设计与交互原型展示，不是已上线的真实拼单服务。第二、三阶段中的积分和社区功能属于未来构想。
 
@@ -48,4 +84,3 @@
 
 - Email：wv199959@gmail.com
 - WeChat：vvv_0509
-
