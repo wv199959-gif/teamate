@@ -2,7 +2,7 @@
 
 **茶搭子——基于组织关系的茶咖拼单小程序 / APP**  
 项目主理人：vivianwang  
-联系方式：wv199959@gmail.com / wechat：vvv_0509
+联系方式：wv199959@gmail.com
 
 ## 项目背景
 
