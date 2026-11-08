@@ -45,15 +45,26 @@ jobs:
             if curl --silent --fail http://127.0.0.1:4173/ >/dev/null; then break; fi
             sleep 1
           done
-          npm install --no-save playwright
+          npm install --no-save playwright sharp
           npx playwright install chromium
           node scripts/capture-readme.mjs
           test "$(find dist/readme-images -maxdepth 1 -name '*.png' | wc -l)" -eq 9
+          node scripts/capture-xhs.mjs
+          test "$(find dist/xhs-single -maxdepth 1 -name '*.png' | wc -l)" -eq 8
+          test "$(find dist/xhs-pairs -maxdepth 1 -name '*.png' | wc -l)" -eq 4
       - name: Save screenshots as a separate artifact
         uses: actions/upload-artifact@v4
         with:
           name: readme-screenshots
           path: dist/readme-images/*.png
+          if-no-files-found: error
+      - name: Save Xiaohongshu PNGs as a downloadable package
+        uses: actions/upload-artifact@v4
+        with:
+          name: xiaohongshu-portfolio-pngs
+          path: |
+            dist/xhs-single/*.png
+            dist/xhs-pairs/*.png
           if-no-files-found: error
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
