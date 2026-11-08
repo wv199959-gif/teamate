@@ -36,6 +36,9 @@ jobs:
       - name: Capture each product page for README
         shell: bash
         run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          fc-cache -f
           mkdir -p dist/readme-images
           npm run preview -- --host 127.0.0.1 --port 4173 > /tmp/tea-mate-preview.log 2>&1 &
           for attempt in {1..30}; do
