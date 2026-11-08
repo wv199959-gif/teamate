@@ -83,5 +83,3 @@
 ## 联系方式
 
 - Email：wv199959@gmail.com
-- WeChat：vvv_0509
-
