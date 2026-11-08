@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<defs><style>
+.bg{fill:#f5eee5}.card{fill:#fffdf9;stroke:#eee2d5;stroke-width:1}.title{font:700 22px sans-serif;fill:#493427}.sub{font:12px sans-serif;fill:#806b5a}.label{font:600 13px sans-serif;fill:#493427}.body{font:12px sans-serif;fill:#493427}.muted{font:11px sans-serif;fill:#806d5d}.white{font:600 12px sans-serif;fill:#fffaf5}.button{fill:#ba4738}.light{fill:#f3e5d3}.pill{fill:#f8e9e4}.tiny{font:10px sans-serif;fill:#ba4738}
+</style></defs>
+<rect class="bg" width="390" height="844"/>
+<text x="18" y="26" class="sub">9:41</text><text x="338" y="26" class="sub">●●●  ▰</text>
+<rect x="18" y="44" width="228" height="30" rx="10" class="light"/><text x="132" y="59" text-anchor="middle" dominant-baseline="middle" class="body">中央财经大学金融学院2017级　⌄</text>
+<text x="18" y="105" class="title">拼单广场</text><text x="18" y="126" class="sub">找一杯一起拼</text>
+<rect x="18" y="141" width="354" height="38" rx="13" class="card"/><text x="34" y="160" dominant-baseline="middle" class="muted">⌕　搜门店或拼单</text>
+<text x="18" y="207" class="label">正在拼单</text><rect x="307" y="190" width="65" height="28" rx="10" class="light"/><text x="339.5" y="204" text-anchor="middle" dominant-baseline="middle" class="body">筛选　⌄</text>
+<!-- demand card one -->
+<rect x="18" y="229" width="354" height="190" rx="18" class="card"/><text x="34" y="254" class="label">霸王茶姬 · 学院路店</text><rect x="307" y="238" width="51" height="22" rx="11" class="pill"/><text x="332.5" y="249" text-anchor="middle" dominant-baseline="middle" class="tiny">拼单中</text>
+<circle cx="44" cy="278" r="12" fill="#bd795f"/><text x="44" y="278" text-anchor="middle" dominant-baseline="middle" class="white">林</text><text x="64" y="282" class="muted">小林 · 中央财经大学金融学院2017级</text>
+<text x="34" y="309" class="body">伯牙绝弦 ×2　茉莉奶绿 ×1</text>
+<g><rect x="34" y="321" width="48" height="7" rx="3.5" fill="#ba4738"/><rect x="87" y="321" width="48" height="7" rx="3.5" fill="#ba4738"/><rect x="140" y="321" width="48" height="7" rx="3.5" fill="#eadfd4"/><rect x="193" y="321" width="48" height="7" rx="3.5" fill="#eadfd4"/></g>
+<text x="34" y="349" class="body">当前 2 / 4 杯　还差 2 杯</text><text x="34" y="369" class="muted">截止 13:30 · 预计 15:20 送达</text><text x="34" y="389" class="muted">交接地点：教学楼一层大厅</text>
+<text x="34" y="407" class="muted">发布于 今天 12:05</text><rect x="278" y="391" width="80" height="24" rx="9" class="button"/><text x="318" y="403" text-anchor="middle" dominant-baseline="middle" class="white">查看详情</text>
+<!-- demand card two -->
+<rect x="18" y="431" width="354" height="190" rx="18" class="card"/><text x="34" y="456" class="label">喜茶 · 校园店</text><rect x="307" y="440" width="51" height="22" rx="11" class="pill"/><text x="332.5" y="451" text-anchor="middle" dominant-baseline="middle" class="tiny">拼单中</text>
+<circle cx="44" cy="480" r="12" fill="#d9b596"/><text x="44" y="480" text-anchor="middle" dominant-baseline="middle" class="white">雨</text><text x="64" y="484" class="muted">小雨 · 中央财经大学金融学院2017级</text>
+<text x="34" y="511" class="body">多肉葡萄 ×1</text>
+<g><rect x="34" y="523" width="68" height="7" rx="3.5" fill="#ba4738"/><rect x="107" y="523" width="68" height="7" rx="3.5" fill="#eadfd4"/></g>
+<text x="34" y="551" class="body">当前 1 / 2 杯　还差 1 杯</text><text x="34" y="571" class="muted">截止 14:30 · 预计 17:00 送达</text><text x="34" y="591" class="muted">交接地点：图书馆正门台阶旁</text>
+<text x="34" y="609" class="muted">发布于 今天 12:18</text><rect x="278" y="593" width="80" height="24" rx="9" class="button"/><text x="318" y="605" text-anchor="middle" dominant-baseline="middle" class="white">查看详情</text>
+<rect x="44" y="642" width="302" height="48" rx="16" class="button"/><text x="195" y="666" text-anchor="middle" dominant-baseline="middle" class="white">＋ 发起拼单</text>
+<text x="195" y="711" text-anchor="middle" class="muted">原型演示 · 信息为虚构数据</text>
+<rect x="0" y="764" width="130" height="80" fill="#ba4738"/><rect x="130" y="764" width="130" height="80" fill="#fffdf9"/><rect x="260" y="764" width="130" height="80" fill="#fffdf9"/>
+<text x="65" y="804" text-anchor="middle" dominant-baseline="middle" class="white">拼单广场</text><text x="195" y="804" text-anchor="middle" dominant-baseline="middle" class="muted">我的拼单</text><text x="325" y="804" text-anchor="middle" dominant-baseline="middle" class="muted">个人中心</text>
+</svg>

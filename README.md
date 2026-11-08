@@ -10,7 +10,7 @@
 
 ## 在线预览
 
-部署完成后可在这里补充链接：
+作品集在线地址：
 
 - 中文：`https://wv199959-gif.github.io/teamate/`
 - English：`https://wv199959-gif.github.io/teamate/en.html`
